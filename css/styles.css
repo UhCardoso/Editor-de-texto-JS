@@ -46,3 +46,18 @@ textarea {
     border-style: solid;
     border-color: black;
 }
+
+@media(max-width: 1200px) {
+    #botoes {
+        width: 90%;
+        min-width: 297px;
+    }
+
+    .btn {
+        margin: 5px 0;
+    }
+
+    #texto {
+        min-width: 297px;
+    }
+}
