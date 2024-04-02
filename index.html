@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Editor de Texto Online</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center">
+        <h1>Editor de texto online</h1>
+    </div>
+    <div class="container d-flex justify-content-center" id="botoes">
+        <div class="btn" id="fontes">
+            <button class="btn" id="negrito" onclick="normalLetter()"><i class="bi bi-alphabet"></i></button>
+            <button class="btn" id="negrito" onclick="negrito()"><i class="bi bi-type-bold"></i></button>
+            <button class="btn" id="italico" onclick="italic()"><i class="bi bi-type-italic"></i></button>
+        </div>
+
+        <div class="btn" id="alinhamento">
+            <button class="btn" id="esquerda" onclick="left()"><i class="bi bi-text-left"></i></button>
+            <button class="btn" id="centro" onclick="center()"><i class="bi bi-text-center"></i></button>
+            <button class="btn" id="direita" onclick="right()"><i class="bi bi-text-right"></i></button>
+        </div>
+
+        <div class="btn" id="transform">
+            <button class="btn" id="maiusculo" onclick="uppercase()">A</i></button>
+            <button class="btn" id="minusculo" onclick="lowercase()">a</i></button>
+            <button class="btn" id="maiMin" onclick="capitalize()">Aa</button>
+        </div>
+
+        <div class="btn" id="limpar">
+            <button class="btn" id="limpartexto" onclick="clearText()"><i class="bi bi-eraser-fill"></i></button>
+        </div>
+    </div>
+
+    <div class="container d-flex justify-content-center" id="campo-de-texto">
+        <textarea id="texto" autofocus placeholder="Digite seu texto..."></textarea>
+    </div>
+
+    <div class="container d-flex justify-content-center" id="export-buttons">
+        <button class="btn" onClick="gerarPDF()">Salvar como PDF</button>
+        <button class="btn" onClick="gerarImagem()">Salvar como imagem</button>
+    </div>
+
+    <div id="imagemResultado"></div>
+
+    <script src="./js/formatacoes.js"></script>
+    <script src="./js/gerarPdf.js"></script>
+    <script src="./js/gerarImagem.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

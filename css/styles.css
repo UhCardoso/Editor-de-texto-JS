@@ -1,0 +1,48 @@
+#botoes {
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 600px;
+    height: 594px;
+    resize: none;
+    padding: 10px;
+}
+
+#negrito,
+#italico {
+    border-style: solid;
+    border-color: black;
+}
+
+#esquerda,
+#centro,
+#direita {
+    border-style: solid;
+    border-color: black;
+}
+
+#maiusculo,
+#minusculo,
+#maiMin {
+    border-style: solid;
+    border-color: black;
+}
+
+#limpartexto {
+    border-style: solid;
+    border-color: black;
+}
+
+#export-buttons {
+    margin-top: 10px;
+    gap: 20px;
+}
+
+#export-buttons button {
+    border-style: solid;
+    border-color: black;
+}
