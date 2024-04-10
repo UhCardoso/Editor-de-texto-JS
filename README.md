@@ -6,9 +6,9 @@ Projeto desenvolvido usando HTML, CSS e JavaScript puro para a criação de um e
 
 Esse editor possui as seguintes funcionalidades de formatações:
 
-Estilos "Bold" e "Itálico";
-Alinhamentos: "Esquerda", "Centro" e "Direita";
-Tipo de letra: "Maiúsculas", "Minúsculas", "Primeira letras das palavras em maiúsculas";
-"Apagar tudo".
+Estilos "Bold" e "Itálico";<br/>
+Alinhamentos: "Esquerda", "Centro" e "Direita";<br/>
+Tipo de letra: "Maiúsculas", "Minúsculas", "Primeira letras das palavras em maiúsculas";<br/>
+"Apagar tudo".<br/>
 
 Também tem a funcionalidade de exportar texto escrito ao final da edição, podendo exportá-lo no formato de imagem ou em PDF.
